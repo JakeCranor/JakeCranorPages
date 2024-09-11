@@ -6,20 +6,20 @@ const Carousel = () => {
   // Define slide data with background color and other properties
   const slides = [
     {
-      image: "../CoxCarousel.png",
-      backgroundColor: "#005480", // Red background for this slide
+      image: `${process.env.PUBLIC_URL}/CoxCarousel.png`, // Correct interpolation
+      backgroundColor: "#005480",
       link: "/coxprojects",
       buttonText: "Cox Projects",
     },
     {
-      image: "../GTCarousel.png",
-      backgroundColor: "#857437", // Green background for this slide
+      image: `${process.env.PUBLIC_URL}/GTCarousel.png`, // Correct interpolation
+      backgroundColor: "#857437",
       link: "/georgiatechprojects",
       buttonText: "Georgia Tech Projects",
     },
     {
-      image: "../MeCarousel.png",
-      backgroundColor: "#feca08", // Blue background for this slide
+      image: `${process.env.PUBLIC_URL}/MeCarousel.png`, // Correct interpolation
+      backgroundColor: "#feca08",
       link: "/personalprojects",
       buttonText: "Personal Projects",
     },

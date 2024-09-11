@@ -1,7 +1,6 @@
 import React from "react";
 import "./HomePageSection.css";
 import Carousel from "../components/Carousel";
-import CoxProjects from "./CoxProjects";
 
 const HomePageSection = () => {
   return (
@@ -33,13 +32,13 @@ const HomePageSection = () => {
             className="github-icon"
             loading="lazy"
             alt=""
-            src="/github.svg"
+            src={`${process.env.PUBLIC_URL}/github.svg`}
           />
           <img
             className="github-icon"
             loading="lazy"
             alt=""
-            src="/linkedin.svg"
+            src={`${process.env.PUBLIC_URL}/linkedin.svg`}
           />
         </footer>
       </section>

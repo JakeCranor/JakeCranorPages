@@ -4,6 +4,7 @@ import {
   Route,
   useNavigationType,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePageSection from "./pages/HomePageSection";
@@ -20,7 +21,7 @@ function App() {
     if (action !== "POP") window.scrollTo(0, 0);
 
     const titles = {
-      "/": "Home",
+      "/": "Jake Cranor",
       "/personal-life-section": "Personal Life",
       "/resume": "Resume",
     };
@@ -31,7 +32,7 @@ function App() {
       "/resume": "My resume",
     };
 
-    document.title = titles[pathname] || "My Website";
+    document.title = titles[pathname] || "Jake Cranor";
     const metaDescriptionTag = document.querySelector(
       'head > meta[name="description"]'
     );
@@ -45,6 +46,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePageSection />} />
         <Route path="/coxprojects" element={<CoxProjects />} />
         <Route path="/georgiatechprojects" element={<GaTechProjects />} />
