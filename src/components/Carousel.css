@@ -1,0 +1,77 @@
+.carousel-container {
+  width: 100%; /* Adjust as needed */
+  margin: auto;
+  position: relative;
+  height: 268px; /* Black background for the carousel */ /* Optional: Add padding if you want some space around the carousel */
+}
+
+.slick-slide {
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+}
+
+.slick-slide img {
+  background-color: #000;
+  padding: 6px;
+  height: 256px;
+  width: 256px; /* White border frame around the image for contrast */ /* Include border in the element's total width and height */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.carousel-container .slick-prev {
+  left: 10px !important;
+}
+
+.carousel-container .slick-next {
+  right: 10px !important;
+}
+
+.slick-dots {
+  bottom: 10px !important; /* Adjust the position of the dots */
+  pointer-events: none !important;
+}
+
+.carousel-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Default background color if not set inline */
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-slide:hover .carousel-overlay {
+  opacity: 1;
+}
+
+.carousel-button {
+  background: rgba(0, 0, 0, 0.5); /* Semi-black button */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.carousel-button:hover {
+  background: #000; /* Black button on hover */
+}

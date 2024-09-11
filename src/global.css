@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --body-base: Inter;
+
+  /* font sizes */
+  --body-base-size: 16px;
+  --font-size-lg: 18px;
+  --font-size-mini: 15px;
+
+  /* Colors */
+  --background-default-default: #fff;
+  --color-black: #000;
+  --text-default-secondary: #757575;
+  --text-default-default: #1e1e1e;
+  --border-default-default: #d9d9d9;
+
+  /* Spacing */
+  --space-400: 16px;
+  --radius-200: 8px;
+  --space-800: 32px;
+  --space-600: 24px;
+  --space-200: 8px;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-29xl: 48px;
+  --padding-12xl: 31px;
+  --padding-xl: 20px;
+  --padding-3xs: 10px;
+  --padding-81xl: 100px;
+  --padding-17xl: 36px;
+  --padding-31xl: 50px;
+  --padding-13xl: 32px;
+  --padding-11xl: 30px;
+  --padding-382xl: 401px;
+  --padding-181xl: 200px;
+  --padding-5xs: 8px;
+  --padding-6xs: 7px;
+  --padding-26xl: 45px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+}
