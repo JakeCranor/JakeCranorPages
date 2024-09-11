@@ -48,11 +48,40 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/JakeCranorPages" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<HomePageSection />} />
-        <Route path="/coxprojects" element={<CoxProjects />} />
-        <Route path="/georgiatechprojects" element={<GaTechProjects />} />
-        <Route path="/personalprojects" element={<PersonalProjects />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/home" element={<Navigate to="/JakeCranorPages/home" />} />
+        <Route
+          path="/coxprojects"
+          element={<Navigate to="/JakeCranorPages/coxprojects" />}
+        />
+        <Route
+          path="/georgiatechprojects"
+          element={<Navigate to="/JakeCranorPages/georgiatechprojects" />}
+        />
+        <Route
+          path="/personalprojects"
+          element={<Navigate to="/JakeCranorPages/personalprojects" />}
+        />
+        <Route
+          path="/resume"
+          element={<Navigate to="/JakeCranorPages/resume" />}
+        />
+
+        <Route path="/" element={<Navigate to="/JakeCranorPages/home" />} />
+        <Route
+          path="/JakeCranorPages"
+          element={<Navigate to="/JakeCranorPages/home" />}
+        />
+        <Route path="/JakeCranorPages/home" element={<HomePageSection />} />
+        <Route path="/JakeCranorPages/coxprojects" element={<CoxProjects />} />
+        <Route
+          path="/JakeCranorPages/georgiatechprojects"
+          element={<GaTechProjects />}
+        />
+        <Route
+          path="/JakeCranorPages/personalprojects"
+          element={<PersonalProjects />}
+        />
+        <Route path="/JakeCranorPages/resume" element={<Resume />} />
       </Routes>
     </>
   );
