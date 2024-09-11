@@ -47,6 +47,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/JakeCranorPages" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePageSection />} />
         <Route path="/coxprojects" element={<CoxProjects />} />
         <Route path="/georgiatechprojects" element={<GaTechProjects />} />
