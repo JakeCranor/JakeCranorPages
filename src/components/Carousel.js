@@ -8,19 +8,19 @@ const Carousel = () => {
     {
       image: `${process.env.PUBLIC_URL}/CoxCarousel.png`, // Correct interpolation
       backgroundColor: "#005480",
-      link: "/coxprojects",
+      link: "/JakeCranorPages/coxprojects",
       buttonText: "Cox Projects",
     },
     {
       image: `${process.env.PUBLIC_URL}/GTCarousel.png`, // Correct interpolation
       backgroundColor: "#857437",
-      link: "/georgiatechprojects",
+      link: "/JakeCranorPages/georgiatechprojects",
       buttonText: "Georgia Tech Projects",
     },
     {
       image: `${process.env.PUBLIC_URL}/MeCarousel.png`, // Correct interpolation
       backgroundColor: "#feca08",
-      link: "/personalprojects",
+      link: "/JakeCranorPages/personalprojects",
       buttonText: "Personal Projects",
     },
   ];
