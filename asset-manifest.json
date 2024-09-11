@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/JakeCranorPages/static/css/main.022ba143.css",
+    "main.js": "/JakeCranorPages/static/js/main.dcb24f7c.js",
+    "static/js/453.87231010.chunk.js": "/JakeCranorPages/static/js/453.87231010.chunk.js",
+    "static/media/Cox.png": "/JakeCranorPages/static/media/Cox.c11cadfd877936827298.png",
+    "static/media/GaTech.png": "/JakeCranorPages/static/media/GaTech.108c440a1d48c0bd115a.png",
+    "static/media/slick.svg": "/JakeCranorPages/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/JakeCranorPages/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/JakeCranorPages/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/JakeCranorPages/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/JakeCranorPages/index.html",
+    "main.022ba143.css.map": "/JakeCranorPages/static/css/main.022ba143.css.map",
+    "main.dcb24f7c.js.map": "/JakeCranorPages/static/js/main.dcb24f7c.js.map",
+    "453.87231010.chunk.js.map": "/JakeCranorPages/static/js/453.87231010.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.022ba143.css",
+    "static/js/main.dcb24f7c.js"
+  ]
+}
