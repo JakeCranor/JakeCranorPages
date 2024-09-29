@@ -13,10 +13,16 @@
   color: var(--text-default-secondary);
   display: none;
 }
+.Subtext {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
 .as-a-computer {
   margin: 0;
 }
 .value {
+  padding: 10px;
   flex: 1;
   position: relative;
   line-height: 140%;

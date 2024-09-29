@@ -73,8 +73,8 @@
   background: linear-gradient(
       to bottom,
       /* Direction of the gradient */ rgba(17, 101, 170, 0.5) 0%,
-      /* Transparent at the top */ rgba(104, 180, 237, 0.5) 40%,
-      /* Full image visibility */ rgba(255, 255, 255, 1) 100%
+      /* Transparent at the top */ rgba(104, 180, 237, 0.5) 30%,
+      /* Full image visibility */ rgba(255, 255, 255, 1) 80%
         /* Color at the bottom */
     ),
     url("../Cox.png"); /* Background image */

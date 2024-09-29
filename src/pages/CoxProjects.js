@@ -44,6 +44,22 @@ const CoxProjects = () => {
         title="SharePoint Summarization Projects"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen></iframe>
+      <section className="project-title">
+        <b className="project-title-text">IBT Interns Racecycle Project Demo</b>
+      </section>
+      <section className="project-description">
+        <b className="project-description-text">
+          The following video is the demo of the Project created by the 2024 Cox
+          IBT interns. The video is part of an hour-long presentation given to
+          Cox employees.
+        </b>
+      </section>
+      <iframe
+        className="youtube-video"
+        src="https://www.youtube.com/embed/83VgKH_QKoc"
+        title="Bootcamp 2024 Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen></iframe>
 
       <section className="project-title">
         <b className="project-title-text">Work Items ACME Project</b>
