@@ -19,8 +19,8 @@ const HomePageSection = () => {
                 As a Computer Science major at Georgia Tech, I am pursuing my
                 passion for software engineering and developing my skills in
                 Object-Oriented Programming and Software Development. My major
-                has a focus in People and Intelligence and expect to graduate in
-                Spring 2025. I am currently working a part-time internship at
+                has a focus in People and Intelligence and I am set to graduate
+                in May of 2025. I am currently working a part-time internship at
                 Cox Enterprises for Intelligent Automation where I can apply my
                 knowledge, skills, and passion to real-world projects and
                 challenges.

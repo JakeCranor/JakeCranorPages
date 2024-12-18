@@ -1,9 +1,30 @@
 import "./ProjectPages.css";
+import Typography from "@mui/material/Typography";
 
 const PersonalProjects = () => {
   return (
     <div className="personal-projects-page-section">
-      <h1 className="page-title">Personal Projects</h1>
+      <div className="header-container">
+        <img
+          src={`${process.env.PUBLIC_URL}/PersonalCode.jpeg`}
+          alt="Georgia Tech"
+          className="page-header-image"
+        />
+        <Typography
+          variant="h3"
+          sx={{
+            position: "absolute",
+            top: "60%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            textShadow: "5px 5px 10px rgba(0, 0, 0, 0.9)",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}>
+          Personal Projects
+        </Typography>
+      </div>
       <section className="introduction">
         <b className="page-description">
           Below are a couple of the computer science projects I have created

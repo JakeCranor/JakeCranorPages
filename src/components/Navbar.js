@@ -16,8 +16,7 @@ import { useTheme } from "@mui/material/styles";
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const isHorizontal = useMediaQuery("(orientation: landscape)");
+  const isMediumOrBelow = useMediaQuery(theme.breakpoints.down("md"));
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -78,19 +77,21 @@ const Navbar = () => {
           transition: "0.3s",
         }}>
         <Toolbar>
-          {/* Mobile Menu Icon */}
-          {isMobile && !isHorizontal && (
+          {/* Drawer for medium and smaller screens */}
+          {isMediumOrBelow && (
             <IconButton
               color="inherit"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ display: { xs: "block", sm: "none" }, marginRight: 2 }}>
+              sx={{
+                display: { xs: "block", sm: "block", md: "block", lg: "none" },
+              }}>
               <MenuIcon />
             </IconButton>
           )}
 
-          {/* Display buttons only on larger screens */}
-          {!isMobile || isHorizontal ? (
+          {/* Display buttons only on large and larger screens */}
+          {!isMediumOrBelow && (
             <Box
               sx={{
                 flexGrow: 1,
@@ -115,7 +116,7 @@ const Navbar = () => {
                 </Button>
               ))}
             </Box>
-          ) : null}
+          )}
         </Toolbar>
         {drawer}
       </AppBar>

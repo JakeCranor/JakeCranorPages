@@ -1,18 +1,94 @@
 import "./ProjectPages.css";
-
+import Typography from "@mui/material/Typography";
 const GeorgiaTechProjects = () => {
   return (
     <div className="gt-page-section">
-      <h1 className="page-title">Georgia Tech Projects</h1>
+      <div className="header-container">
+        <img
+          src={`${process.env.PUBLIC_URL}/GaTech.png`}
+          alt="Georgia Tech"
+          className="page-header-image"
+        />
+        <Typography
+          variant="h3"
+          sx={{
+            position: "absolute",
+            top: "60%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            textShadow: "5px 5px 10px rgba(0, 0, 0, 0.9)",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}>
+          Georgia Tech Projects
+        </Typography>
+      </div>
 
       <section className="introduction">
         <b className="page-description">
           I am currently a part-time student at Georgia Tech, set to graduate
           this May. As I prepare for graduation, I am actively seeking a
           full-time position. Below, you'll find a list of the group projects I
-          have completed and am currently working on at Georgia Tech.
+          have completed at Georgia Tech.
         </b>
       </section>
+
+      <section className="project-title">
+        <b className="project-title-text">Junior Design (CS 3311 & 3312)</b>
+      </section>
+      <section className="project-description">
+        <b className="project-description-text">
+          The following PDF showcases the group project that I completed for my
+          Computer Science Capstone. The project won 1st place for the 2024 Fall
+          Computer Science Capstone -{" "}
+          <a
+            href="https://tinyurl.com/GTCSWinner"
+            target="_blank"
+            rel="noopener noreferrer">
+            Fall 2024 Expo Winners
+          </a>
+          .
+        </b>
+        <b className="project-description-text">
+          The website is currently live at{" "}
+          <a
+            href="https://CourtScience.app"
+            target="_blank"
+            rel="noopener noreferrer">
+            CourtScience.app
+          </a>
+          .
+        </b>
+        <b className="project-description-text">
+          A demo of the project can be found at
+          <a
+            href="https://www.youtube.com/watch?v=DUdrdL_eDWg"
+            target="_blank"
+            rel="noopener noreferrer">
+            {" "}
+            Final Demo
+          </a>
+          .
+        </b>
+        <b className="project-description-text">
+          More on the project can be found at
+          <a
+            href="https://tinyurl.com/linkedinCourtScience"
+            target="_blank"
+            rel="noopener noreferrer">
+            {" "}
+            Court Science LinkedIn Post
+          </a>
+        </b>
+      </section>
+      <iframe
+        className="pdf-viewer"
+        src="https://drive.google.com/file/d/1b9jHwj4BhfSkEYAM-1xI2vs6elkZaCdK/preview"
+        width="100%"
+        height="600px"
+        title="ML Final Project"
+      />
 
       <section className="project-title">
         <b className="project-title-text">Machine Learning (CS 4641)</b>
@@ -40,7 +116,14 @@ const GeorgiaTechProjects = () => {
           2340. Although the app had a few bugs by the end, it was a valuable
           first experience working with mobile applications. You can find the
           project's code on my github at
-          https://github.com/JakeCranor/CS2340Group37.
+          <a
+            href="https://github.com/JakeCranor/CS2340Group37"
+            target="_blank"
+            rel="noopener noreferrer">
+            {" "}
+            Final Project Code
+          </a>
+          .
         </b>
       </section>
       <iframe
