@@ -5,6 +5,11 @@
 body {
   margin: 0;
   line-height: normal;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -51,4 +56,16 @@ body {
 
   /* Border radiuses */
   --br-5xs: 8px;
+}
+
+/* Main content positioning */
+#root {
+  position: relative;
+}
+
+/* Navbar positioning */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }

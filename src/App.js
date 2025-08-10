@@ -6,12 +6,12 @@ import {
   useLocation,
   Navigate,
 } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import HomePageSection from "./pages/HomePageSection";
 import CoxProjects from "./pages/CoxProjects";
 import GaTechProjects from "./pages/GeorgiaTechProjects";
 import PersonalProjects from "./pages/PersonalProjects";
 import Resume from "./pages/Resume";
+import Navbar from "./components/Navbar";
 
 function App() {
   const action = useNavigationType();
@@ -42,13 +42,36 @@ function App() {
     }
   }, [action, pathname]);
 
+  // Only hide the navbar on the home page
+  const isHomePage =
+    pathname.includes("/home") ||
+    pathname === "/" ||
+    pathname === "/JakeCranorPages" ||
+    pathname === "/JakeCranorPages/" ||
+    pathname === "/JakeCranorPages/home";
+
+  // Create state objects for navigation
+  const homeWithSplashState = { showSplash: true };
+  const homeWithoutSplashState = { showSplash: false };
+
   return (
     <>
-      <Navbar />
+      {!isHomePage && <Navbar />}
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/JakeCranorPages" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Navigate to="/JakeCranorPages/home" />} />
+        <Route
+          path="/"
+          element={<Navigate to="/home" state={homeWithSplashState} />}
+        />
+        <Route
+          path="/JakeCranorPages"
+          element={<Navigate to="/home" state={homeWithSplashState} />}
+        />
+        <Route
+          path="/home"
+          element={
+            <Navigate to="/JakeCranorPages/home" state={homeWithSplashState} />
+          }
+        />
         <Route
           path="/coxprojects"
           element={<Navigate to="/JakeCranorPages/coxprojects" />}
@@ -66,10 +89,17 @@ function App() {
           element={<Navigate to="/JakeCranorPages/resume" />}
         />
 
-        <Route path="/" element={<Navigate to="/JakeCranorPages/home" />} />
+        <Route
+          path="/"
+          element={
+            <Navigate to="/JakeCranorPages/home" state={homeWithSplashState} />
+          }
+        />
         <Route
           path="/JakeCranorPages"
-          element={<Navigate to="/JakeCranorPages/home" />}
+          element={
+            <Navigate to="/JakeCranorPages/home" state={homeWithSplashState} />
+          }
         />
         <Route path="/JakeCranorPages/home" element={<HomePageSection />} />
         <Route path="/JakeCranorPages/coxprojects" element={<CoxProjects />} />
